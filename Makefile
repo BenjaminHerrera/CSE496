@@ -22,8 +22,9 @@ clean:
 
 # Create a distribution package
 dist:
-	pyinstaller --onefile $(APP_BASE_NAME).py
+	pyinstaller --onefile $(APP_BASE_NAME).py --distpath .
 	rm -f $(APP_BASE_NAME).spec
+	rm -rf build
 
 # PHONY targets to avoid conflicts with files named 'run', 'test', etc.
 .PHONY: all run test install clean dist

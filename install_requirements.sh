@@ -18,4 +18,4 @@ pip install -r requirements.txt
 #   Build the `bchoc` program
 #
 make dist
-./dist/bchoc
+./bchoc
